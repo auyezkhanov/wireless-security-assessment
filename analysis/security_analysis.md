@@ -1,0 +1,11 @@
+| SSID                       | Encryption             | Security Rating | Reasoning                                                                                                                   |
+| -------------------------- | ---------------------- | --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **KBTU**                   | WPA2-Enterprise (CCMP) | **Low (Good)**  | Stronger than WPA2-Personal. Uses 802.1X, resistant to offline cracking. Security depends on proper certificate validation. |
+| **Beeline_1C77**           | WPA2-Personal (CCMP)   | **Medium**      | WPA2-PSK can be cracked via dictionary attack if password is weak.                                                          |
+| **DIRECT-C2-HP 4103dw LJ** | WPA2-Personal          | **Medium**      | Default SSID + WPA2-PSK → vulnerable to PSK cracking; printer devices often use weak passkeys.                              |
+| **DIRECT-BA-HP M428dw LJ** | WPA2-Personal          | **Medium**      | Same as above, default Wi-Fi Direct name, vulnerable to WPA2-PSK attacks.                                                   |
+| **DIRECT-74-HP M428dw LJ** | WPA2-Personal          | **Medium**      | WPA2-PSK; easily attackable if weak PIN/PSK used.                                                                           |
+| **DIRECT-D2-HP 4103dw LJ** | WPA2-Personal          | **Medium**      | Printer Wi-Fi Direct, often poorly configured.                                                                              |
+| **DIRECT-A4-HP M428dw LJ** | WPA2-Personal          | **Medium**      | WPA2-PSK; device-to-device network → weak protections.                                                                      |
+| **DIRECT-3D-HP M428dw LJ** | WPA2-Personal          | **Medium**      | Same issues — weak PSKs and default SSID patterns.                                                                          |
+| **DIRECT-C0-HP M428dw LJ** | WPA2-Personal          | **Medium**      | WPA2-PSK + default SSID.                                                                                                    |
